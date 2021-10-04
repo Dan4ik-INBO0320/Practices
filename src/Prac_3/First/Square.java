@@ -1,4 +1,4 @@
-package Prac_3;
+package Prac_3.First;
 
 public class Square extends Rectangle {
 
@@ -26,13 +26,13 @@ public class Square extends Rectangle {
     }
 
     @Override
-    public void setWidth(double width) {
-        super.setWidth(width);
+    public void setWidth(double side) {
+        this.side = side;
     }
 
     @Override
-    public void setLength(double length) {
-        super.setLength(length);
+    public void setLength(double side) {
+        this.side = side;
     }
 
     @Override
