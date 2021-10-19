@@ -10,8 +10,8 @@ public class SwingPrac extends JFrame {
     private int k1 = 0, k2 = 0;
 
     private JButton button1 = new JButton("Ac Milan");
-
     private JButton button2 = new JButton("Real Madrid");
+
     private JLabel result = new JLabel("Result: " + k1 + " X " + k2);
     private JLabel scorer = new JLabel("Last Scorer: ");
     private JLabel winner = new JLabel("Winner: ");
@@ -25,14 +25,20 @@ public class SwingPrac extends JFrame {
 
         Container container = this.getContentPane();
         container.setLayout(new BorderLayout());
+
+
         container.add(result, BorderLayout.CENTER);
         container.add(scorer,BorderLayout.SOUTH);
         container.add(winner, BorderLayout.NORTH);
 
+
         button1.addMouseListener(new ButtonEventListener1());
         container.add(button1, BorderLayout.WEST);
+
+
         button2.addMouseListener(new ButtonEventListener2());
         container.add(button2,BorderLayout.EAST);
+
         setVisible(true);
 
     }
@@ -119,7 +125,6 @@ public class SwingPrac extends JFrame {
     public static void main(String[] args) {
 
         SwingPrac ex1 = new SwingPrac();
-
 
     }
 }
